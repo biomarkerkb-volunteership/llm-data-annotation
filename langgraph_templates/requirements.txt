@@ -1,0 +1,6 @@
+# Pinned to what I tested on 2026-09-25. Bump deliberately, not automatically.
+langgraph==1.2.12
+langchain-anthropic==1.7.4
+langchain-core==1.6.5
+pydantic==2.*
+python-dotenv==1.*
