@@ -1,28 +1,23 @@
 # LangGraph templates
 
-Four scripts I wrote while working through the LangGraph intro. They are
-deliberately tiny. Each one adds exactly one idea to the previous one, and
-nothing here is meant to survive into the real pipeline.
+Four scripts I wrote while working through the LangGraph intro.
+You will need an [Openai AI key](https://platform.openai.com/login) to run them.
 
-| Script | What it adds |
-|---|---|
-| `01_hello_llm.py` | one node, one call, so you can see what a graph minimally is |
-| `02_two_nodes.py` | a second node, and state being handed from one to the next |
+| Script                    | What it adds                                                          |
+| ------------------------- | --------------------------------------------------------------------- |
+| `01_hello_llm.py`         | simple LLM invocation with showing the model reasonings               |
+| `02_two_nodes.py`         | a second node, and state being handed from one to the next            |
 | `03_structured_output.py` | a pydantic schema, so the reply comes back parsed instead of as prose |
-| `04_check_and_retry.py` | a conditional edge that loops back when a check fails |
-
-Script 4 is the one that matters. It extracts a supporting sentence from an
-abstract, then checks with plain string matching that the sentence really is in
-the abstract, and sends the graph back round if it isn't. That verify-then-loop
-shape is how the evidence field gets filled without a paraphrase ever being
-stored as a quotation.
+| `04_check_and_retry.py`   | a conditional edge that loops back when a check fails                 |
 
 ## Running them
 
 ```bash
+cd langgraph_templates
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env    # then paste the key in
+cp .env.example .env    # then paste the API key in .env
+# Alternatively, you may directly import OPENAI_API_KEY as an environmental variable
 python 01_hello_llm.py
 ```
 
