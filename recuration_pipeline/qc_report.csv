@@ -1,0 +1,61 @@
+biomarker_id,field,current_value,issue
+AN6753-1,assessed_entity_type,protein complex,invalid controlled vocabulary value
+AN6435-1,assessed_entity_type,lipoprotein,invalid controlled vocabulary value
+BD0264-1,assessed_entity_type,amino acid,invalid controlled vocabulary value
+AN6284-1,assessed_entity_type,protein complex,invalid controlled vocabulary value
+AN6745-1,assessed_entity_type,protein complex,invalid controlled vocabulary value
+AN6485-1,change_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BD0267-1,change_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AO2172-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BD0259-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA8025-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5533-5,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN6485-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4975-2,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BD0262-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5328-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA9732-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5334-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BD0263-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5337-2,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA8610-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AO1439-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BD0267-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA8126-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4808-2,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5331-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA7410-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA7827-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5333-2,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5170-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5170-3,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA6766-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AV7770-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5335-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4775-2,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5325-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5332-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA7537-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5587-2,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4974-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4998-4,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4998-3,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4998-2,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4998-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN5027-4,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA6984-5,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AO2881-3,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA7264-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4881-3,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA7268-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BD0274-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4808-5,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN7363-3,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4811-7,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BA9211-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BD0279-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BD0280-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BD0259-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4675-4,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+BD0283-1,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
+AN4811-7,aspect_type_vocab,not_specified,invalid or unresolved controlled vocabulary value
