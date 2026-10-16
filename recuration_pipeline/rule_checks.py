@@ -1,3 +1,4 @@
+import re
 import pandas as pd
 
 from record_loader import load_records
@@ -8,11 +9,11 @@ from vocab_loader import load_vocabulary
 # File paths
 # -------------------------------------------------
 
-DATA_FILE = "biomarkers_top_50.tsv"
+DATA_FILE = "recuration_pipeline/biomarkers_top_50.tsv"
 
-ENTITY_VOCAB_FILE = "controlled_vocab/entity_type.txt"
-CHANGE_VOCAB_FILE = "controlled_vocab/change_type.txt"
-ASPECT_VOCAB_FILE = "controlled_vocab/aspect_type.txt"
+ENTITY_VOCAB_FILE = "recuration_pipeline/controlled_vocab/entity_type.txt"
+CHANGE_VOCAB_FILE = "recuration_pipeline/controlled_vocab/change_type.txt"
+ASPECT_VOCAB_FILE = "recuration_pipeline/controlled_vocab/aspect_type.txt"
 
 OUTPUT_FILE = "qc_report.csv"
 
@@ -71,12 +72,12 @@ def find_missing_required_fields(df, required_fields):
 
 
 # -------------------------------------------------
-# Check 3: Formatting
+# Check 3: Whitespace / formatting
 # -------------------------------------------------
 
 def find_entity_type_formatting_issues(df):
     """
-    Find entity types with unnecessary
+    Find entity types containing unnecessary
     leading or trailing whitespace.
     """
 
@@ -92,6 +93,197 @@ def find_entity_type_formatting_issues(df):
 
 
 # -------------------------------------------------
+# Check 4: Controlled vocabulary casing
+# -------------------------------------------------
+
+def find_casing_issues(df, columns, vocabularies):
+    """
+    Find values that match an official CV term
+    when case is ignored, but do not use the
+    official casing.
+
+    Examples:
+        Protein -> protein
+        dna -> DNA
+        Increased -> increased
+    """
+
+    problems = []
+
+    for column, allowed_values in zip(
+        columns,
+        vocabularies
+    ):
+
+        # Create mapping:
+        # lowercase version -> official version
+        official_case = {
+            value.lower(): value
+            for value in allowed_values
+        }
+
+        for _, row in df.iterrows():
+
+            value = row.get(column)
+
+            if pd.isna(value):
+                continue
+
+            value = str(value).strip()
+
+            lower_value = value.lower()
+
+            if (
+                lower_value in official_case
+                and value != official_case[lower_value]
+            ):
+
+                problems.append({
+                    "biomarker_id": row["biomarker_id"],
+                    "field": column,
+                    "current_value": value,
+                    "expected_value":
+                        official_case[lower_value],
+                    "issue": "incorrect casing"
+                })
+
+    return pd.DataFrame(problems)
+
+
+# -------------------------------------------------
+# Check 5: Identifier prefix / format
+# -------------------------------------------------
+
+def find_identifier_format_issues(df):
+    """
+    Check basic identifier prefixes and formats.
+    """
+
+    problems = []
+
+    for _, row in df.iterrows():
+
+        biomarker_id = row.get("biomarker_id")
+        entity_id = row.get(
+            "assessed_biomarker_entity_id"
+        )
+        condition_id = row.get("condition_id")
+        specimen_id = row.get("specimen_id")
+
+        # -----------------------------------------
+        # BiomarkerKB ID
+        # Example: AN6284-1
+        # -----------------------------------------
+
+        if pd.notna(biomarker_id):
+
+            value = str(biomarker_id).strip()
+
+            if not re.fullmatch(
+                r"[A-Z]{2}\d{4}-\d+",
+                value
+            ):
+
+                problems.append({
+                    "biomarker_id": biomarker_id,
+                    "field": "biomarker_id",
+                    "current_value": value,
+                    "issue":
+                        "unexpected BiomarkerKB ID format"
+                })
+
+        # -----------------------------------------
+        # Assessed biomarker entity ID
+        #
+        # Examples:
+        # PRO:PR_000050342
+        # HGNC:1234
+        # CHEBI:12345
+        #
+        # Different entity types may use different
+        # identifier namespaces, so we check the
+        # general PREFIX:IDENTIFIER structure.
+        # -----------------------------------------
+
+        if pd.notna(entity_id):
+
+            value = str(entity_id).strip()
+
+            if not re.fullmatch(
+                r"[A-Za-z][A-Za-z0-9_-]*:"
+                r"[A-Za-z0-9_.-]+",
+                value
+            ):
+
+                problems.append({
+                    "biomarker_id": biomarker_id,
+                    "field":
+                        "assessed_biomarker_entity_id",
+                    "current_value": value,
+                    "issue":
+                        "invalid identifier prefix/format"
+                })
+
+        # -----------------------------------------
+        # Condition ID
+        #
+        # If the identifier uses the DOID namespace,
+        # verify the DOID format.
+        #
+        # Example:
+        # DOID:0080600
+        # -----------------------------------------
+
+        if pd.notna(condition_id):
+
+            value = str(condition_id).strip()
+
+            if value.startswith("DOID:"):
+
+                if not re.fullmatch(
+                    r"DOID:\d+",
+                    value
+                ):
+
+                    problems.append({
+                        "biomarker_id": biomarker_id,
+                        "field": "condition_id",
+                        "current_value": value,
+                        "issue": "invalid DOID format"
+                    })
+
+        # -----------------------------------------
+        # Specimen ID
+        #
+        # If the identifier uses UBERON,
+        # verify its format.
+        #
+        # Example:
+        # UBERON:0000178
+        # -----------------------------------------
+
+        if pd.notna(specimen_id):
+
+            value = str(specimen_id).strip()
+
+            if value.startswith("UBERON:"):
+
+                if not re.fullmatch(
+                    r"UBERON:\d+",
+                    value
+                ):
+
+                    problems.append({
+                        "biomarker_id": biomarker_id,
+                        "field": "specimen_id",
+                        "current_value": value,
+                        "issue": "invalid UBERON format"
+                    })
+
+    return pd.DataFrame(problems)
+
+
+# -------------------------------------------------
 # Create QC report
 # -------------------------------------------------
 
@@ -100,53 +292,113 @@ def create_qc_report(
     invalid_changes,
     invalid_aspects,
     missing_required,
-    formatting_issues
+    formatting_issues,
+    casing_issues,
+    identifier_issues
 ):
 
     problems = []
 
+    # ---------------------------------------------
     # Invalid entity types
+    # ---------------------------------------------
+
     for _, row in invalid_entities.iterrows():
 
         problems.append({
             "biomarker_id": row["biomarker_id"],
             "field": "assessed_entity_type",
-            "current_value": row["assessed_entity_type"],
-            "issue": "invalid controlled vocabulary value"
+            "current_value":
+                row["assessed_entity_type"],
+            "issue":
+                "invalid controlled vocabulary value"
         })
 
+    # ---------------------------------------------
     # Invalid / unresolved change types
+    # ---------------------------------------------
+
     for _, row in invalid_changes.iterrows():
 
         problems.append({
             "biomarker_id": row["biomarker_id"],
             "field": "change_type_vocab",
-            "current_value": row["change_type_vocab"],
-            "issue": "invalid or unresolved controlled vocabulary value"
+            "current_value":
+                row["change_type_vocab"],
+            "issue":
+                "invalid or unresolved "
+                "controlled vocabulary value"
         })
 
+    # ---------------------------------------------
     # Invalid / unresolved aspect types
+    # ---------------------------------------------
+
     for _, row in invalid_aspects.iterrows():
 
         problems.append({
             "biomarker_id": row["biomarker_id"],
             "field": "aspect_type_vocab",
-            "current_value": row["aspect_type_vocab"],
-            "issue": "invalid or unresolved controlled vocabulary value"
+            "current_value":
+                row["aspect_type_vocab"],
+            "issue":
+                "invalid or unresolved "
+                "controlled vocabulary value"
         })
 
+    # ---------------------------------------------
     # Missing required fields
+    # ---------------------------------------------
+
     problems.extend(missing_required)
 
-    # Formatting problems
+    # ---------------------------------------------
+    # Whitespace / formatting problems
+    # ---------------------------------------------
+
     for _, row in formatting_issues.iterrows():
 
         problems.append({
             "biomarker_id": row["biomarker_id"],
             "field": "assessed_entity_type",
-            "current_value": row["assessed_entity_type"],
-            "issue": "formatting / whitespace problem"
+            "current_value":
+                row["assessed_entity_type"],
+            "issue":
+                "formatting / whitespace problem"
         })
+
+    # ---------------------------------------------
+    # Casing problems
+    # ---------------------------------------------
+
+    if not casing_issues.empty:
+
+        for _, row in casing_issues.iterrows():
+
+            problems.append({
+                "biomarker_id": row["biomarker_id"],
+                "field": row["field"],
+                "current_value":
+                    row["current_value"],
+                "issue":
+                    "incorrect controlled vocabulary casing"
+            })
+
+    # ---------------------------------------------
+    # Identifier problems
+    # ---------------------------------------------
+
+    if not identifier_issues.empty:
+
+        for _, row in identifier_issues.iterrows():
+
+            problems.append({
+                "biomarker_id": row["biomarker_id"],
+                "field": row["field"],
+                "current_value":
+                    row["current_value"],
+                "issue": row["issue"]
+            })
 
     return pd.DataFrame(problems)
 
@@ -167,8 +419,14 @@ if __name__ == "__main__":
 
     records = load_records(DATA_FILE)
 
-    print("\nBiomarkerKB records loaded successfully.")
-    print("Number of records:", len(records))
+    print(
+        "\nBiomarkerKB records loaded successfully."
+    )
+
+    print(
+        "Number of records:",
+        len(records)
+    )
 
 
     # -------------------------------------------------
@@ -187,11 +445,13 @@ if __name__ == "__main__":
         ASPECT_VOCAB_FILE
     )
 
-    print("Controlled vocabularies loaded successfully.")
+    print(
+        "Controlled vocabularies loaded successfully."
+    )
 
 
     # -------------------------------------------------
-    # Step 3: Entity type check
+    # Step 3: Entity type CV check
     # -------------------------------------------------
 
     invalid_entities = find_invalid_values(
@@ -202,7 +462,7 @@ if __name__ == "__main__":
 
 
     # -------------------------------------------------
-    # Step 4: Change type check
+    # Step 4: Change type CV check
     # -------------------------------------------------
 
     invalid_changes = find_invalid_values(
@@ -213,7 +473,7 @@ if __name__ == "__main__":
 
 
     # -------------------------------------------------
-    # Step 5: Aspect type check
+    # Step 5: Aspect type CV check
     # -------------------------------------------------
 
     invalid_aspects = find_invalid_values(
@@ -244,16 +504,102 @@ if __name__ == "__main__":
 
 
     # -------------------------------------------------
-    # Step 7: Formatting check
+    # Step 7: Whitespace / formatting check
     # -------------------------------------------------
 
-    formatting_issues = find_entity_type_formatting_issues(
-        records
+    formatting_issues = (
+        find_entity_type_formatting_issues(
+            records
+        )
     )
 
 
     # -------------------------------------------------
-    # Step 8: Print summary
+    # Step 8: Casing check
+    # -------------------------------------------------
+
+    casing_issues = find_casing_issues(
+        records,
+        [
+            "assessed_entity_type",
+            "change_type_vocab",
+            "aspect_type_vocab"
+        ],
+        [
+            entity_types,
+            change_types,
+            aspect_types
+        ]
+    )
+
+
+    # -------------------------------------------------
+    # Step 9: Identifier prefix / format check
+    # -------------------------------------------------
+
+    identifier_issues = (
+        find_identifier_format_issues(
+            records
+        )
+    )
+
+
+    # -------------------------------------------------
+    # Display casing results
+    # -------------------------------------------------
+
+    print("\n------------------------------------")
+    print("CASING ISSUES")
+    print("------------------------------------")
+
+    if casing_issues.empty:
+
+        print("No casing issues found.")
+
+    else:
+
+        print(
+            casing_issues.to_string(
+                index=False
+            )
+        )
+
+    print(
+        "\nTotal casing issues:",
+        len(casing_issues)
+    )
+
+
+    # -------------------------------------------------
+    # Display identifier results
+    # -------------------------------------------------
+
+    print("\n------------------------------------")
+    print("IDENTIFIER FORMAT ISSUES")
+    print("------------------------------------")
+
+    if identifier_issues.empty:
+
+        print(
+            "No identifier format issues found."
+        )
+
+    else:
+
+        print(
+            identifier_issues.to_string(
+                index=False
+            )
+        )
+
+    print(
+        "\nTotal identifier format issues:",
+        len(identifier_issues)
+    )
+
+
+    # -------------------------------------------------
+    # Step 10: Print QC summary
     # -------------------------------------------------
 
     print("\n====================================")
@@ -285,9 +631,19 @@ if __name__ == "__main__":
         len(formatting_issues)
     )
 
+    print(
+        "Casing problems:",
+        len(casing_issues)
+    )
+
+    print(
+        "Identifier format problems:",
+        len(identifier_issues)
+    )
+
 
     # -------------------------------------------------
-    # Step 9: Create QC report
+    # Step 11: Create QC report
     # -------------------------------------------------
 
     qc_report = create_qc_report(
@@ -295,12 +651,14 @@ if __name__ == "__main__":
         invalid_changes,
         invalid_aspects,
         missing_required,
-        formatting_issues
+        formatting_issues,
+        casing_issues,
+        identifier_issues
     )
 
 
     # -------------------------------------------------
-    # Step 10: Save QC report
+    # Step 12: Save QC report
     # -------------------------------------------------
 
     qc_report.to_csv(
@@ -312,7 +670,13 @@ if __name__ == "__main__":
     print("QC REPORT")
     print("====================================")
 
-    print("Total problems:", len(qc_report))
-    print(f"QC report saved to: {OUTPUT_FILE}")
+    print(
+        "Total problems:",
+        len(qc_report)
+    )
+
+    print(
+        f"QC report saved to: {OUTPUT_FILE}"
+    )
 
     print("\nQC checks completed.")
