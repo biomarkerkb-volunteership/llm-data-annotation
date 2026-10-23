@@ -1,0 +1,39 @@
+biomarker_id,field,original_value,proposed_value,gold_value,match
+AN6753-1,assessed_entity_type,protein complex,protein,protein,True
+AN6435-1,assessed_entity_type,lipoprotein,lipid,lipid,True
+AN6284-1,assessed_entity_type,protein complex,protein,protein,True
+AN6745-1,assessed_entity_type,protein complex,protein,protein,True
+AN6485-1,change_type_vocab,not_specified,increased,presence of,False
+AO2172-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+BD0259-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN5533-5,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN6485-1,aspect_type_vocab,not_specified,level,modification,False
+AN4975-2,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+BD0262-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN5334-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+BD0263-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+BA8610-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AO1439-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN4808-2,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN5331-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+BA7410-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN5333-2,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN5170-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN5170-3,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN5335-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN4775-2,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN5325-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+BA7537-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN5587-2,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN4974-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN4998-4,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN4998-3,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN4998-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN5027-4,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+BA6984-5,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AO2881-3,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+BA7264-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN4881-3,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+BA7268-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+AN4808-5,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
+BD0259-1,aspect_type_vocab,not_specified,sequence variation,sequence variation,True
