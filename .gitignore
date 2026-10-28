@@ -10,3 +10,6 @@ cache/
 
 __pycache__/
 *.pyc
+
+# PubMed paper cache
+pubmed/cache/
