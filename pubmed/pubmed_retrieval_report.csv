@@ -1,0 +1,97 @@
+biomarker_id,evidence_source,status,reason,pmid,pmcid,title,has_abstract,has_full_text
+AO2172-1,PubMed:23742673,resolved,,23742673,PMC3729608,"Association between a rare novel TP53 variant (rs78378222) and melanoma, squamous cell carcinoma of head and neck and lung cancer susceptibility in non-Hispanic Whites.",True,True
+BD0259-1,PubMed:21862407,resolved,,21862407,,"Olaparib in patients with recurrent high-grade serous or poorly differentiated ovarian carcinoma or triple-negative breast cancer: a phase 2, multicentre, open-label, non-randomised study.",True,False
+BA8025-1,PubMed:31488892,resolved,,31488892,PMC6906293,GWAS of five gynecologic diseases and cross-trait analysis in Japanese.,True,True
+AN5449-1,PubMed:28490518,resolved,,28490518,PMC5563854,CHK1 Inhibition in Small-Cell Lung Cancer Produces Single-Agent Activity in Biomarker-Defined Disease Subsets and Combination Activity with Cisplatin or Olaparib.,True,True
+AN5533-5,PubMed:29606586,resolved,,29606586,PMC5949072,"Larotrectinib for paediatric solid tumours harbouring NTRK gene fusions: phase 1 results from a multicentre, open-label, phase 1/2 study.",True,True
+AN6485-1,PubMed:31865042,resolved,,31865042,,Circulating HOXA9-methylated tumour DNA: A novel biomarker of response to poly (ADP-ribose) polymerase inhibition in BRCA-mutated epithelial ovarian cancer.,True,False
+AN6490-1,PubMed:30592286,resolved,,30592286,PMC6365765,miR‑498 inhibits the growth and metastasis of liver cancer by targeting ZEB2.,True,True
+AN4975-2,PubMed:31208370,resolved,,31208370,PMC6580637,EGFR exon 20 insertion mutations and response to osimertinib in non-small-cell lung cancer.,True,True
+BB1524-1,PubMed:12717392,resolved,,12717392,,Des-gamma carboxyprothrombin can differentiate hepatocellular carcinoma from nonmalignant chronic liver disease in american patients.,True,False
+AN6373-1,PubMed:32169400,resolved,,32169400,PMC7127395,Cardiac troponin I in patients with coronavirus disease 2019 (COVID-19): Evidence from a meta-analysis.,False,True
+BD0261-1,PubMed:32305557,resolved,,32305557,PMC7160645,The impact of 2019 novel coronavirus on heart injury: A Systematic review and Meta-analysis.,True,True
+AN6753-1,PubMed:32220650,resolved,,32220650,PMC7158906,"Clinical and epidemiological features of 36 children with coronavirus disease 2019 (COVID-19) in Zhejiang, China: an observational cohort study.",True,True
+AN6290-5,PubMed:32425269,resolved,,32425269,PMC7233239,Elevated levels of IL-6 and CRP predict the need for mechanical ventilation in COVID-19.,True,True
+AN5048-6,PubMed:24146218,resolved,,24146218,,"HER2 in high-risk rectal cancer patients treated in EXPERT-C, a randomized phase II trial of neoadjuvant capecitabine and oxaliplatin (CAPOX) and chemoradiotherapy (CRT) with or without cetuximab.",True,False
+BD0262-1,PubMed:23435830,resolved,,23435830,PMC11824679,PIK3CA mutation is associated with poor survival among patients with metastatic colorectal cancer following anti-EGFR monoclonal antibody therapy: a meta-analysis.,True,False
+AN5328-1,PubMed:24559322,resolved,,24559322,,Regorafenib in metastatic colorectal cancer.,True,False
+BA9732-1,PubMed:32887889,resolved,,32887889,PMC7473862,Pan-cancer study detects genetic risk variants and shared genetic basis in two large cohorts.,True,True
+AN5334-1,PubMed:22948721,resolved,,22948721,,Impact of the specific mutation in KRAS codon 12 mutated tumors on treatment efficacy in patients with metastatic colorectal cancer receiving cetuximab-based first-line therapy: a pooled analysis of three trials.,True,False
+AN6435-1,PubMed:15533907,resolved,,15533907,,Serum oxidized low-density lipoprotein levels and risk of colorectal cancer: a case-control study nested in the Japan Collaborative Cohort Study.,True,False
+BD0263-1,PubMed:25673558,resolved,,25673558,,Predictive role of BRAF mutations in patients with advanced colorectal cancer receiving cetuximab and panitumumab: a meta-analysis.,True,False
+BD0264-1,PubMed:20142522,resolved,,20142522,,"Inherited metabolic disorders and stroke part 2: homocystinuria, organic acidurias, and urea cycle disorders.",True,False
+AN5337-2,PubMed:20978259,resolved,,20978259,,Association of KRAS p.G13D mutation with outcome in patients with chemotherapy-refractory metastatic colorectal cancer treated with cetuximab.,True,False
+BA8610-1,PubMed:30206226,resolved,,30206226,PMC6134090,Exome-wide analysis identifies three low-frequency missense variants associated with pancreatic cancer risk in Chinese populations.,True,True
+AO1439-1,PubMed:17934461,resolved,,17934461,,A genome-wide association study shows that common alleles of SMAD7 influence colorectal cancer risk.,True,False
+BD0265-1,PubMed:16211233,resolved,,16211233,,Serum amyloid A as a tumor marker in sera of nude mice with orthotopic human pancreatic cancer and in plasma of patients with pancreatic cancer.,True,False
+BD0266-1,PubMed:36142483,resolved,,36142483,PMC9502483,Glial Cell-Mediated Neuroinflammation in Alzheimer's Disease.,True,True
+BD0267-1,PubMed:22113448,resolved,,22113448,PMC3337404,Evaluating genetic markers and neurobiochemical analytes for fluoxetine response using a panel of mouse inbred strains.,True,True
+AN6448-1,PubMed:33875374,resolved,,33875374,PMC8012169,"Critical illness polyneuropathy, myopathy and neuronal biomarkers in COVID-19 patients: A prospective study.",True,True
+AN6539-1,PubMed:31582665,resolved,,31582665,,Leucine-Rich Alpha-2-Glycoprotein 1 in Serum Is a Possible Biomarker to Predict Response to Preoperative Chemoradiotherapy for Esophageal Cancer.,True,False
+AN6309-1,PubMed:32479790,resolved,,32479790,PMC7259911,"Clinical characteristics and risk factors associated with COVID-19 disease severity in patients with cancer in Wuhan, China: a multicentre, retrospective, cohort study.",True,True
+AN6284-1,PubMed:32286245,resolved,,32286245,,"Hematologic, biochemical and immune biomarker abnormalities associated with severe illness and mortality in coronavirus disease 2019 (COVID-19): a meta-analysis.",True,False
+AN6745-1,PubMed:32620118,resolved,,32620118,PMC7332531,Dynamic changes of D-dimer and neutrophil-lymphocyte count ratio as prognostic biomarkers in COVID-19.,True,True
+BA8126-1,PubMed:29058716,resolved,,29058716,PMC5808456,Identification of ten variants associated with risk of estrogen-receptor-negative breast cancer.,True,True
+AN6422-1,PubMed:32416121,resolved,,32416121,PMC7233217,"Glycosylated hemoglobin is associated with systemic inflammation, hypercoagulability, and prognosis of COVID-19 patients.",True,True
+AN4808-2,PubMed:23325582,resolved,,23325582,,Massively parallel tumor multigene sequencing to evaluate response to panitumumab in a randomized phase III study of metastatic colorectal cancer.,True,False
+AN6697-1,PubMed:30650187,resolved,,30650187,,Circulating and tissue IMP3 levels are correlated with poor survival in renal cell carcinoma.,True,False
+AN5331-1,PubMed:20619739,resolved,,20619739,,"Effects of KRAS, BRAF, NRAS, and PIK3CA mutations on the efficacy of cetuximab plus chemotherapy in chemotherapy-refractory metastatic colorectal cancer: a retrospective consortium analysis.",True,False
+BD0268-1,PubMed:16551734,resolved,,16551734,,"Serum 21-Deoxycortisol, 17-Hydroxyprogesterone, and 11-deoxycortisol in classic congenital adrenal hyperplasia: clinical and hormonal correlations and identification of patients with 11beta-hydroxylase deficiency among a large group with alleged 21-hydroxylase deficiency.",True,False
+BA7410-1,PubMed:31174203,resolved,,31174203,PMC6737293,Combined analysis of keratinocyte cancers identifies novel genome-wide loci.,True,True
+BA7827-1,PubMed:20932654,resolved,,20932654,PMC2991431,Genome-wide association study to identify single nucleotide polymorphisms (SNPs) associated with the development of erectile dysfunction in African-American men after radiotherapy for prostate cancer.,True,True
+AN5333-2,PubMed:23313110,resolved,,23313110,,The dominant role of G12C over other KRAS mutation types in the negative prediction of efficacy of epidermal growth factor receptor tyrosine kinase inhibitors in non-small cell lung cancer.,True,False
+AN5170-1,PubMed:21067377,resolved,,21067377,PMC3201818,DNMT3A mutations in acute myeloid leukemia.,True,True
+AN5170-3,PubMed:21482694,resolved,,21482694,PMC3236248,Potent activity of ponatinib (AP24534) in models of FLT3-driven acute myeloid leukemia and other hematologic malignancies.,True,True
+BA6766-1,PubMed:24836286,resolved,,24836286,PMC4068797,Large-scale genetic study in East Asians identifies six new loci associated with colorectal cancer risk.,True,True
+AV7770-1,PubMed:17301300,resolved,,17301300,,Inheritance of a cancer-associated MLH1 germ-line epimutation.,True,False
+AN5335-1,PubMed:18316791,resolved,,18316791,,Wild-type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer.,True,False
+AN4775-2,PubMed:27404270,resolved,,27404270,,Colorectal Cancer with BRAF D594G Mutation Is Not Associated with Microsatellite Instability or Poor Prognosis.,True,False
+AN5325-1,PubMed:20570890,resolved,,20570890,PMC2943514,Genomic and biological characterization of exon 4 KRAS mutations in human cancer.,True,True
+AN5332-1,PubMed:,unresolved,missing_pmid,,,,False,False
+BA7537-1,PubMed:26151821,resolved,,26151821,PMC4967357,Genome-wide association study of colorectal cancer identifies six new susceptibility loci.,True,True
+AN4771-1,PubMed:25673644,resolved,,25673644,PMC4390490,Clinical Acquired Resistance to RAF Inhibitor Combinations in BRAF-Mutant Colorectal Cancer through MAPK Pathway Alterations.,True,True
+AN5587-2,PubMed:20619739,resolved,,20619739,,"Effects of KRAS, BRAF, NRAS, and PIK3CA mutations on the efficacy of cetuximab plus chemotherapy in chemotherapy-refractory metastatic colorectal cancer: a retrospective consortium analysis.",True,False
+AN4974-1,PubMed:23816960,resolved,,23816960,,Phase III study of afatinib or cisplatin plus pemetrexed in patients with metastatic lung adenocarcinoma with EGFR mutations.,True,False
+AN5009-3,PubMed:23265711,resolved,,23265711,,Predictive value of epidermal growth factor receptor expression for first-line chemotherapy plus cetuximab in patients with head and neck and colorectal cancer: analysis of data from the EXTREME and CRYSTAL studies.,True,False
+AN5009-2,PubMed:26459251,resolved,,26459251,,The relation of EGFR expression by immunohistochemical staining and clinical response of combination treatment of nimotuzumab and chemotherapy in esophageal squamous cell carcinoma.,True,False
+AN4998-4,PubMed:24457318,resolved,,24457318,,Clinical predictors of response to EGFR tyrosine kinase inhibitors in patients with EGFR-mutant non-small cell lung cancer.,True,False
+AN4998-3,PubMed:22452895,resolved,,22452895,,Afatinib for patients with lung adenocarcinoma and epidermal growth factor receptor mutations (LUX-Lung 2): a phase 2 trial.,True,False
+AN4998-2,PubMed:17177598,resolved,,17177598,PMC1702556,Epidermal growth factor receptor activation in glioblastoma through novel missense mutations in the extracellular domain.,True,True
+AN4998-1,PubMed:19147750,resolved,,19147750,,Functional analysis of epidermal growth factor receptor (EGFR) mutations and potential implications for EGFR targeted therapy.,True,False
+AN5027-4,PubMed:25668228,resolved,,25668228,,EGFR T790M resistance mutation in non small-cell lung carcinoma.,True,False
+BA6984-5,PubMed:26098869,resolved,,26098869,PMC4520746,"Common variation at 2p13.3, 3q29, 7p13 and 17q25.1 associated with susceptibility to pancreatic cancer.",True,True
+AO2881-3,PubMed:25086665,resolved,,25086665,PMC4191666,Genome-wide association study identifies multiple susceptibility loci for pancreatic cancer.,True,True
+BA7264-1,PubMed:26098869,resolved,,26098869,PMC4520746,"Common variation at 2p13.3, 3q29, 7p13 and 17q25.1 associated with susceptibility to pancreatic cancer.",True,True
+AN4881-3,PubMed:35100714,resolved,,35100714,,Palbociclib in Patients With Pancreatic and Biliary Cancer With CDKN2A Alterations: Results From the Targeted Agent and Profiling Utilization Registry Study.,True,False
+BA7268-1,PubMed:26098869,resolved,,26098869,PMC4520746,"Common variation at 2p13.3, 3q29, 7p13 and 17q25.1 associated with susceptibility to pancreatic cancer.",True,True
+AN6278-5,PubMed:32479790,resolved,,32479790,PMC7259911,"Clinical characteristics and risk factors associated with COVID-19 disease severity in patients with cancer in Wuhan, China: a multicentre, retrospective, cohort study.",True,True
+AN6278-4,PubMed:28791816,resolved,,28791816,,"IL-6, IL-8 and TNF-α levels correlate with disease stage in breast cancer patients.",True,False
+AN6278-2,PubMed:28848164,resolved,,28848164,PMC5644965,"S100A8/A9 (Calprotectin), Interleukin-6, and C-Reactive Protein in Obesity and Diabetes before and after Roux-en-Y Gastric Bypass Surgery.",True,False
+AN6278-5,PubMed:32479790,resolved,,32479790,PMC7259911,"Clinical characteristics and risk factors associated with COVID-19 disease severity in patients with cancer in Wuhan, China: a multicentre, retrospective, cohort study.",True,True
+AN6278-7,PubMed:32479790,resolved,,32479790,PMC7259911,"Clinical characteristics and risk factors associated with COVID-19 disease severity in patients with cancer in Wuhan, China: a multicentre, retrospective, cohort study.",True,True
+AN6278-5,PubMed:32479790,resolved,,32479790,PMC7259911,"Clinical characteristics and risk factors associated with COVID-19 disease severity in patients with cancer in Wuhan, China: a multicentre, retrospective, cohort study.",True,True
+AN6278-8,PubMed:32479790,resolved,,32479790,PMC7259911,"Clinical characteristics and risk factors associated with COVID-19 disease severity in patients with cancer in Wuhan, China: a multicentre, retrospective, cohort study.",True,True
+AN6290-5,PubMed:32240105,resolved,,32240105,PMC7185138,Immune gene signature delineates a subclass of thyroid cancer with unfavorable clinical outcomes.,True,True
+BD0266-1,PubMed:36142483,resolved,,36142483,PMC9502483,Glial Cell-Mediated Neuroinflammation in Alzheimer's Disease.,True,True
+BD0271-1,PubMed:36142483,resolved,,36142483,PMC9502483,Glial Cell-Mediated Neuroinflammation in Alzheimer's Disease.,True,True
+BD0272-1,PubMed:36142483,resolved,,36142483,PMC9502483,Glial Cell-Mediated Neuroinflammation in Alzheimer's Disease.,True,True
+BD0273-1,PubMed:36142483,resolved,,36142483,PMC9502483,Glial Cell-Mediated Neuroinflammation in Alzheimer's Disease.,True,True
+BD0274-1,PubMed:36142483,resolved,,36142483,PMC9502483,Glial Cell-Mediated Neuroinflammation in Alzheimer's Disease.,True,True
+AN6294-4,PubMed:16211233,resolved,,16211233,,Serum amyloid A as a tumor marker in sera of nude mice with orthotopic human pancreatic cancer and in plasma of patients with pancreatic cancer.,True,False
+AN5065-3,PubMed:22374460,resolved,,22374460,PMC3304403,Multicentre phase II trial of trastuzumab and capecitabine in patients with HER2 overexpressing metastatic pancreatic cancer.,True,True
+AN4808-5,PubMed:21166657,resolved,,21166657,,Frequencies of BRAF and NRAS mutations are different in histological types and sites of origin of cutaneous melanoma: a meta-analysis.,True,False
+AN7363-3,PubMed:11389159,resolved,,11389159,PMC1734886,BRCA1 and BRCA2 mutation status and cancer family history of Danish women affected with multifocal or bilateral breast cancer at a young age.,True,False
+AN4811-7,PubMed:24594804,resolved,,24594804,PMC3940924,BRAFV600E mutation and its association with clinicopathological features of colorectal cancer: a systematic review and meta-analysis.,True,True
+BA9211-1,PubMed:27117709,resolved,,27117709,PMC4853421,Identification of four novel susceptibility loci for oestrogen receptor negative breast cancer.,True,True
+BD0276-1,PubMed:36142483,resolved,,36142483,PMC9502483,Glial Cell-Mediated Neuroinflammation in Alzheimer's Disease.,True,True
+BD0277-1,PubMed:36142483,resolved,,36142483,PMC9502483,Glial Cell-Mediated Neuroinflammation in Alzheimer's Disease.,True,True
+BD0278-1,PubMed:36142483,resolved,,36142483,PMC9502483,Glial Cell-Mediated Neuroinflammation in Alzheimer's Disease.,True,True
+BD0279-1,PubMed:21527715,resolved,,21527715,,A crystal structure of the complex between human complement receptor 2 and its ligand C3d.,True,False
+BD0280-1,PubMed:26424050,resolved,,26424050,PMC4600760,Genome-wide association study identifies multiple susceptibility loci for glioma.,True,True
+BD0259-1,PubMed:26740259,resolved,,26740259,,BRCA1/2 mutations associated with progression-free survival in ovarian cancer patients in the AGO-OVAR 16 study.,True,False
+BD0281-1,PubMed:26790878,resolved,,26790878,PMC4821699,PSA and beyond: alternative prostate cancer biomarkers.,True,False
+AN6746-1,PubMed:36189508,resolved,,36189508,,HE4 and CA125 serum biomarker monitoring in women with epithelial ovarian cancer.,True,False
+AN6320-1,PubMed:32540459,resolved,,32540459,PMC7290182,Prognostic value of carcinoembryonic antigen on outcome in patients with coronavirus disease 2019.,False,True
+AN4675-4,PubMed:21575866,resolved,,21575866,,"CH5424802, a selective ALK inhibitor capable of blocking the resistant gatekeeper mutant.",True,False
+BD0283-1,PubMed:21890455,resolved,,21890455,,Toll-like receptor 9 agonist IMO cooperates with cetuximab in K-ras mutant colorectal and pancreatic cancers.,True,False
+AN4811-7,PubMed:19001320,resolved,,19001320,,Wild-type BRAF is required for response to panitumumab or cetuximab in metastatic colorectal cancer.,True,False
