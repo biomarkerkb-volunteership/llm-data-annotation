@@ -1,0 +1,68 @@
+{
+  "results": [
+    {
+      "field": "assessed_biomarker_entity",
+      "judgment": "supported",
+      "proposed_rewrite": null,
+      "supporting_sentence": "We have previously shown that ponatinib exhibits potent in vitro inhibitory activity against a discrete subset of additional protein tyrosine kinases including members of the class III/IV subfamily of receptor tyrosine kinases (RTK) FLT3, KIT, FGFR1 (fibroblast growth factor receptor 1), and platelet derived growth factor receptor α (PDGFRα; ref. 2).",
+      "confidence": 0.95,
+      "reason": "The paper explicitly names FLT3 as one of the targeted receptor tyrosine kinases."
+    },
+    {
+      "field": "assessed_entity_type",
+      "judgment": "supported",
+      "proposed_rewrite": null,
+      "supporting_sentence": "Activating mutations in KIT and FLT3 are found in AML.",
+      "confidence": 0.8,
+      "reason": "The paper describes activating mutations in FLT3, which supports treating FLT3 as a gene (source describes sequence alterations in FLT3)."
+    },
+    {
+      "field": "condition",
+      "judgment": "supported",
+      "proposed_rewrite": null,
+      "supporting_sentence": "We evaluated the cellular activity of ponatinib against FLT3, KIT, FGFR1, and PDGFRα in a panel of leukemic cell lines that express these dysregulated RTKs to explore potential applications of ponatinib in hematologic malignancies beyond BCR-ABL–driven CML.",
+      "confidence": 0.95,
+      "reason": "The study was performed in leukemic cell lines and discusses AML; 'leukemia' as the condition is directly supported."
+    },
+    {
+      "field": "best_biomarker_role",
+      "judgment": "insufficient_evidence",
+      "proposed_rewrite": "prognostic",
+      "supporting_sentence": "FLT3-ITD mutations have been associated with a worse prognosis for AML patients, both in terms of relapse and overall survival, when treated with standard therapy (9–11).",
+      "confidence": 0.6,
+      "reason": "The paper reports that FLT3-ITD is associated with worse prognosis (prognostic role). It does not provide evidence that FLT3-ITD is a 'risk' biomarker (i.e., associated with increased risk of developing leukemia), so the 'risk' role as stated is not supported by the supplied text. A more accurate role supported by the text is 'prognostic'."
+    },
+    {
+      "field": "biomarker",
+      "judgment": "supported",
+      "proposed_rewrite": null,
+      "supporting_sentence": "Given the major clinical relevance of the FLT3-ITD mutation in AML, subsequent studies focused on the characterization of ponatinib’s activity against this target.",
+      "confidence": 0.95,
+      "reason": "The paper explicitly identifies the FLT3-ITD mutation as the biomarker under study."
+    },
+    {
+      "field": "change_type_vocab",
+      "judgment": "supported",
+      "proposed_rewrite": null,
+      "supporting_sentence": "Here, the activity of ponatinib was evaluated in a panel of leukemic cell lines that harbor activating mutations in FLT3 (FLT3-ITD; MV4-11 cells; ref. 18) and KIT (N822K; Kasumi-1 cells; ref. 19), or activating fusions of FGFR1 (FGFR1OP2-FGFR1; KG-1 cells; ref. 20) and PDGFRα (FIP1L1-PDGFRα; EOL1 cells; ref. 21).",
+      "confidence": 0.9,
+      "reason": "The paper describes presence of the FLT3-ITD mutation in the MV4-11 cell line, supporting the 'presence of' change type."
+    },
+    {
+      "field": "aspect_type_vocab",
+      "judgment": "insufficient_evidence",
+      "proposed_rewrite": "sequence variation",
+      "supporting_sentence": "The majority of these mutations arise from an internal tandem duplication (ITD) in the juxta-membrane region of the receptor.",
+      "confidence": 0.9,
+      "reason": "The provided aspect value 'not_specified' is not in the allowed vocabulary. The paper clearly describes the ITD as a sequence alteration (internal tandem duplication), so 'sequence variation' is the appropriate allowed-vocabulary rewrite."
+    },
+    {
+      "field": "evidence",
+      "judgment": "insufficient_evidence",
+      "proposed_rewrite": "In preclinical studies, MV4-11 cells harboring FLT3-ITD and RS4;11 cells expressing native FLT3 were tested. The paper reports ponatinib inhibited viability of FLT3-ITD–driven cell lines with low-nanomolar potency (ponatinib IC50s for the tested cell lines lie within 0.5–17 nmol/L), sorafenib and sunitinib showed IC50s of 4 and 12 nmol/L against FLT3, respectively, and the IC50 for RS4;11 (native FLT3) was >100 nmol/L.",
+      "supporting_sentence": null,
+      "confidence": 0.6,
+      "reason": "Parts of the submitted evidence are supported: the study used MV4-11 (FLT3-ITD) and RS4;11 (native FLT3) cell lines; sorafenib and sunitinib IC50s of 4 and 12 nmol/L against FLT3, and RS4;11 IC50 >100 nmol/L are explicitly reported. However, the specific claim 'ponatinib IC50=2 nmol/L' for growth inhibition of MV4-11 is not explicitly present in the supplied source text (the paper reports ponatinib IC50 ranges across cell lines and refers to Table 1 for per-cell-line values). Also, the user text calls this a 'preclinical trial' — the paper describes preclinical in vitro and in vivo studies but not a 'preclinical trial' per se. Therefore the evidence string is partially accurate but contains specific numeric and phrasing claims that cannot be fully verified from the provided text. Evidence quote failed verbatim verification."
+    }
+  ]
+}
