@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "field": "assessed_biomarker_entity",
+      "judgment": "supported",
+      "proposed_rewrite": null,
+      "supporting_sentence": "Patients were stratified according to whether they had a BRCA1 or BRCA2 mutation or not.",
+      "confidence": 0.9,
+      "reason": "The paper explicitly mentions BRCA1 (as part of 'BRCA1 or BRCA2 mutation'), so the entity 'BRCA1' is present in the source."
+    },
+    {
+      "field": "assessed_entity_type",
+      "judgment": "supported",
+      "proposed_rewrite": null,
+      "supporting_sentence": "Patients were stratified according to whether they had a BRCA1 or BRCA2 mutation or not.",
+      "confidence": 0.8,
+      "reason": "The source refers to BRCA1 in the context of having a 'mutation', which supports interpreting BRCA1 as a gene (the entity in which sequence variation occurs)."
+    },
+    {
+      "field": "condition",
+      "judgment": "supported",
+      "proposed_rewrite": null,
+      "supporting_sentence": "91 patients were enrolled (65 with ovarian cancer and 26 breast cancer) and 90 were treated between July 8, 2008, and Sept 24, 2009.",
+      "confidence": 0.95,
+      "reason": "The paper explicitly reports patient cohorts including ovarian cancer; the record's condition 'ovarian cancer' matches the source."
+    },
+    {
+      "field": "best_biomarker_role",
+      "judgment": "unsupported",
+      "proposed_rewrite": "predictive",
+      "supporting_sentence": "In these patients, confirmed objective responses were seen in seven (41%; 95% CI 22-64) of 17 patients with BRCA1 or BRCA2 mutations and 11 (24%; 14-38) of 46 without mutations.",
+      "confidence": 0.85,
+      "reason": "The paper reports association of BRCA mutation status with response to olaparib (a predictive/therapeutic-response association). It does not claim a prognostic or 'risk' role; therefore 'prognostic;risk' is not supported. 'Predictive' better matches the reported finding."
+    },
+    {
+      "field": "biomarker",
+      "judgment": "insufficient_evidence",
+      "proposed_rewrite": "presence of BRCA1 or BRCA2 mutation",
+      "supporting_sentence": "In these patients, confirmed objective responses were seen in seven (41%; 95% CI 22-64) of 17 patients with BRCA1 or BRCA2 mutations and 11 (24%; 14-38) of 46 without mutations.",
+      "confidence": 0.85,
+      "reason": "The paper reports results for patients with BRCA1 or BRCA2 mutations combined. It does not provide data specifically for presence of mutation in BRCA1 alone, so the exact claim 'presence of mutation in BRCA1' cannot be verified."
+    },
+    {
+      "field": "change_type_vocab",
+      "judgment": "supported",
+      "proposed_rewrite": null,
+      "supporting_sentence": "Patients were stratified according to whether they had a BRCA1 or BRCA2 mutation or not.",
+      "confidence": 0.9,
+      "reason": "The source distinguishes patients by whether a mutation was present, supporting the 'presence of' change type."
+    },
+    {
+      "field": "aspect_type_vocab",
+      "judgment": "insufficient_evidence",
+      "proposed_rewrite": "sequence variation",
+      "supporting_sentence": "Patients were stratified according to whether they had a BRCA1 or BRCA2 mutation or not.",
+      "confidence": 0.9,
+      "reason": "The record's 'not_specified' is not one of the allowed controlled-vocabulary values. The paper's mention of 'mutation' indicates the appropriate allowed aspect is 'sequence variation'."
+    },
+    {
+      "field": "evidence",
+      "judgment": "supported",
+      "proposed_rewrite": null,
+      "supporting_sentence": "63 patients had target lesions and therefore were evaluable for objective response as per RECIST. In these patients, confirmed objective responses were seen in seven (41%; 95% CI 22-64) of 17 patients with BRCA1 or BRCA2 mutations and 11 (24%; 14-38) of 46 without mutations.",
+      "confidence": 0.95,
+      "reason": "The quoted sentences from the paper match the record's numerical values, cohort sizes (63 evaluable ovarian-cancer patients; 17 with BRCA1/2 mutations and 46 without), and reported objective responses and 95% CIs."
+    }
+  ],
+  "source_type": "abstract_only",
+  "pmid": "21862407"
+}

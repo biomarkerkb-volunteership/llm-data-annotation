@@ -40,6 +40,8 @@ class FieldValidation(BaseModel):
 
 class ValidationResult(BaseModel):
     results: list[FieldValidation]
+    source_type: Literal["full_text", "abstract_only"] | None = None
+    pmid: str | None = None
 
 
 def validate_record(record, paper):
@@ -145,6 +147,27 @@ IMPORTANT VALIDATION RULES:
 
     result = response.output_parsed
     
+    if result is None:
+        raise ValueError("The model returned no parsed validation result.")
+
+    expected_fields = set(fields_to_check)
+    returned_fields = [item.field for item in result.results]
+
+    missing_fields = expected_fields - set(returned_fields)
+    unexpected_fields = set(returned_fields) - expected_fields
+
+    duplicate_fields = {
+        field for field in returned_fields
+        if returned_fields.count(field) > 1
+    }
+
+    if missing_fields or unexpected_fields or duplicate_fields:
+        raise ValueError(
+            "Invalid field validation output. "
+            f"Missing: {sorted(missing_fields)}, "
+            f"Unexpected: {sorted(unexpected_fields)}, "
+            f"Duplicates: {sorted(duplicate_fields)}"
+        )
     # Reject proposed corrections outside controlled vocabulary
     for item in result.results:
         if (
@@ -185,5 +208,11 @@ IMPORTANT VALIDATION RULES:
             item.reason += (
                 " No verified supporting sentence available."
             )
+    result.source_type = (
+        "full_text"
+        if paper.get("full_text")
+        else "abstract_only"
+    )
 
+    result.pmid = str(paper.get("pmid") or "")
     return result
