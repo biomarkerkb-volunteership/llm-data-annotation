@@ -13,3 +13,12 @@ __pycache__/
 
 # PubMed paper cache
 pubmed/cache/
+
+# Week 8 SQLite checkpoints
+recuration_pipeline/checkpoints/
+
+# Week 8 local backup
+recuration_pipeline/week8_results_backup/
+
+# Week 8 individual JSON results
+recuration_pipeline/week8_results/*.json
