@@ -1,0 +1,149 @@
+biomarker_id,field,original_value,gold_value,actual_error,predicted_error,outcome,validation_judgment,validation_confidence
+AN6284-1,assessed_biomarker_entity,Serum ferritin,Serum ferritin,False,False,TN,supported,0.9
+AN6284-1,assessed_entity_type,protein complex,protein,True,True,TP,insufficient_evidence,0.3
+AN6284-1,change_type_vocab,increased,increased,False,False,TN,insufficient_evidence,0.4
+AN6284-1,aspect_type_vocab,level,level,False,False,TN,supported,0.85
+AN6745-1,assessed_biomarker_entity,D-dimer,D-dimer,False,False,TN,supported,0.98
+AN6745-1,assessed_entity_type,protein complex,protein,True,True,TP,insufficient_evidence,0.8
+AN6745-1,change_type_vocab,increased,increased,False,False,TN,supported,0.95
+AN6745-1,aspect_type_vocab,level,level,False,False,TN,supported,0.96
+BD0266-1,assessed_biomarker_entity,CHI3L1,YKL-40 (chitinase-3-like protein 1),True,False,FN,insufficient_evidence,0.9
+BD0266-1,assessed_entity_type,gene,protein,True,False,FN,insufficient_evidence,0.9
+BD0266-1,change_type_vocab,increased,increased,False,False,TN,supported,0.9
+BD0266-1,aspect_type_vocab,expression,level,True,False,FN,insufficient_evidence,0.9
+AO2172-1,assessed_biomarker_entity,TP53,TP53,False,False,TN,supported,0.9
+AO2172-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AO2172-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AO2172-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.8
+BD0259-1,assessed_biomarker_entity,BRCA1,BRCA1,False,False,TN,supported,0.9
+BD0259-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.8
+BD0259-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+BD0259-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.8
+AN5533-5,assessed_biomarker_entity,NTRK3,NTRK3,False,False,TN,supported,0.9
+AN5533-5,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AN5533-5,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN5533-5,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.85
+AN6485-1,assessed_biomarker_entity,HOXA9,HOXA9,False,False,TN,supported,0.95
+AN6485-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AN6485-1,change_type_vocab,not_specified,presence of,True,True,TP,insufficient_evidence,0.8
+AN6485-1,aspect_type_vocab,not_specified,modification,True,True,TP,insufficient_evidence,0.85
+AN4975-2,assessed_biomarker_entity,EGFR,EGFR,False,False,TN,supported,0.95
+AN4975-2,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AN4975-2,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN4975-2,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+AN6753-1,assessed_biomarker_entity,Creatine kinase MB,Creatine kinase MB,False,False,TN,supported,0.9
+AN6753-1,assessed_entity_type,protein complex,protein,True,True,TP,insufficient_evidence,0.6
+AN6753-1,change_type_vocab,increased,increased,False,False,TN,supported,0.9
+AN6753-1,aspect_type_vocab,level,level,False,False,TN,supported,0.85
+BD0262-1,assessed_biomarker_entity,PIK3CA,PIK3CA,False,False,TN,supported,0.95
+BD0262-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.6
+BD0262-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+BD0262-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.3
+AN5334-1,assessed_biomarker_entity,KRAS,KRAS,False,False,TN,supported,0.95
+AN5334-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.95
+AN5334-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN5334-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+AN6435-1,assessed_biomarker_entity,Oxidized low-density lipoprotein,Oxidized low-density lipoprotein,False,False,TN,supported,0.95
+AN6435-1,assessed_entity_type,lipoprotein,lipid,True,True,TP,insufficient_evidence,0.7
+AN6435-1,change_type_vocab,increased,increased,False,False,TN,supported,0.9
+AN6435-1,aspect_type_vocab,level,level,False,False,TN,supported,0.9
+BD0263-1,assessed_biomarker_entity,BRAF,BRAF,False,False,TN,supported,0.95
+BD0263-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+BD0263-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+BD0263-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+BA8610-1,assessed_biomarker_entity,APOB,APOB,False,False,TN,supported,0.9
+BA8610-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+BA8610-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.85
+BA8610-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.85
+AO1439-1,assessed_biomarker_entity,SMAD7,SMAD7,False,False,TN,supported,0.9
+AO1439-1,assessed_entity_type,gene,gene,False,False,TN,insufficient_evidence,0.5
+AO1439-1,change_type_vocab,presence of,presence of,False,False,TN,insufficient_evidence,0.6
+AO1439-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.8
+AN4808-2,assessed_biomarker_entity,BRAF,BRAF,False,False,TN,supported,0.9
+AN4808-2,assessed_entity_type,gene,gene,False,False,TN,supported,0.85
+AN4808-2,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN4808-2,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+AN5331-1,assessed_biomarker_entity,KRAS,KRAS,False,False,TN,supported,0.95
+AN5331-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.95
+AN5331-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.95
+AN5331-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+BA7410-1,assessed_biomarker_entity,CTSH,CTSH,False,False,TN,unsupported,0.95
+BA7410-1,assessed_entity_type,gene,gene,False,False,TN,insufficient_evidence,0.9
+BA7410-1,change_type_vocab,presence of,presence of,False,False,TN,insufficient_evidence,0.9
+BA7410-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+AN5333-2,assessed_biomarker_entity,KRAS,KRAS,False,False,TN,supported,0.9
+AN5333-2,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AN5333-2,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN5333-2,aspect_type_vocab,not_specified,sequence variation,True,True,TP,unsupported,0.9
+AN5170-1,assessed_biomarker_entity,FLT3,FLT3,False,False,TN,supported,0.9
+AN5170-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AN5170-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN5170-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+AN5170-3,assessed_biomarker_entity,FLT3,FLT3,False,False,TN,supported,0.95
+AN5170-3,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AN5170-3,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN5170-3,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+AN5335-1,assessed_biomarker_entity,KRAS,KRAS,False,False,TN,supported,0.95
+AN5335-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AN5335-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN5335-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+AN4775-2,assessed_biomarker_entity,BRAF,BRAF,False,False,TN,supported,0.9
+AN4775-2,assessed_entity_type,gene,gene,False,False,TN,supported,0.7
+AN4775-2,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN4775-2,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.85
+AN5325-1,assessed_biomarker_entity,KRAS,KRAS,False,False,TN,supported,0.9
+AN5325-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AN5325-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN5325-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.85
+BA7537-1,assessed_biomarker_entity,PREX1,PREX1,False,False,TN,supported,0.93
+BA7537-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.92
+BA7537-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.87
+BA7537-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+AN5587-2,assessed_biomarker_entity,PIK3CA,PIK3CA,False,False,TN,supported,0.9
+AN5587-2,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AN5587-2,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN5587-2,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.8
+AN4974-1,assessed_biomarker_entity,EGFR,EGFR,False,False,TN,supported,0.95
+AN4974-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AN4974-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN4974-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.4
+AN4998-4,assessed_biomarker_entity,EGFR,EGFR,False,False,TN,supported,0.9
+AN4998-4,assessed_entity_type,gene,gene,False,False,TN,supported,0.8
+AN4998-4,change_type_vocab,presence of,presence of,False,False,TN,supported,0.85
+AN4998-4,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.8
+AN4998-3,assessed_biomarker_entity,EGFR,EGFR,False,False,TN,supported,0.9
+AN4998-3,assessed_entity_type,gene,gene,False,False,TN,supported,0.7
+AN4998-3,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN4998-3,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+AN4998-1,assessed_biomarker_entity,EGFR,EGFR,False,False,TN,supported,0.9
+AN4998-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.85
+AN4998-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.8
+AN4998-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.85
+AN5027-4,assessed_biomarker_entity,EGFR,EGFR,False,False,TN,supported,0.95
+AN5027-4,assessed_entity_type,gene,gene,False,False,TN,insufficient_evidence,0.35
+AN5027-4,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN5027-4,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+BA6984-5,assessed_biomarker_entity,CLPTM1L,CLPTM1L,False,False,TN,unsupported,0.95
+BA6984-5,assessed_entity_type,gene,gene,False,False,TN,insufficient_evidence,0.3
+BA6984-5,change_type_vocab,presence of,presence of,False,False,TN,supported,0.8
+BA6984-5,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+AO2881-3,assessed_biomarker_entity,TERT,TERT,False,False,TN,supported,0.9
+AO2881-3,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AO2881-3,change_type_vocab,presence of,presence of,False,False,TN,supported,0.8
+AO2881-3,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.85
+BA7264-1,assessed_biomarker_entity,ABO,ABO,False,False,TN,supported,0.9
+BA7264-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+BA7264-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.75
+BA7264-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.85
+AN4881-3,assessed_biomarker_entity,CDKN2A,CDKN2A,False,False,TN,supported,0.9
+AN4881-3,assessed_entity_type,gene,gene,False,False,TN,supported,0.8
+AN4881-3,change_type_vocab,presence of,presence of,False,False,TN,supported,0.9
+AN4881-3,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.85
+BA7268-1,assessed_biomarker_entity,SUGCT,SUGCT,False,False,TN,supported,0.9
+BA7268-1,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+BA7268-1,change_type_vocab,presence of,presence of,False,False,TN,supported,0.8
+BA7268-1,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.9
+AN4808-5,assessed_biomarker_entity,BRAF,BRAF,False,False,TN,supported,0.9
+AN4808-5,assessed_entity_type,gene,gene,False,False,TN,supported,0.9
+AN4808-5,change_type_vocab,presence of,presence of,False,False,TN,supported,0.85
+AN4808-5,aspect_type_vocab,not_specified,sequence variation,True,True,TP,insufficient_evidence,0.8
