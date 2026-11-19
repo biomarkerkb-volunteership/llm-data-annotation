@@ -1,0 +1,4 @@
+biomarker_id,field,original_value,gold_value,actual_error,predicted_error,outcome,validation_judgment,validation_confidence
+BD0266-1,assessed_biomarker_entity,CHI3L1,YKL-40 (chitinase-3-like protein 1),True,False,FN,insufficient_evidence,0.9
+BD0266-1,assessed_entity_type,gene,protein,True,False,FN,insufficient_evidence,0.9
+BD0266-1,aspect_type_vocab,expression,level,True,False,FN,insufficient_evidence,0.9
